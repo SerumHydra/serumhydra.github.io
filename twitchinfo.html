@@ -5,24 +5,70 @@
       lang="en_US.json">
 <head>
     <meta charset="utf-8">
-    <tittle>Twitch Channel Info</tittle>
-    <meta content="Twitch Channel Info" property="og:title">
-    <meta content="Here is information about my twitch channel, with a link to get you there!" property="og:description">
+    <title>Projects</title>
+    <meta content="Here is My Twitch Channel!" name="description">
+    <meta content="Twitch" property="og:title">
+    <meta content="Here is my twitch" property="og:description">
+    <meta content="twitch" property="twitter:title">
+    <meta content="Here is my twitch channel!" property="twitter:description">
     <meta content="website" property="og:type">
     <meta content="summary_large_image" name="twitter:card">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Github" name="generator">
     <link href="./css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="./css/stylesheet.css">
-    <link href="./images/favicon.ico" rel="shortcut icon" type="text/css"/>
+    <link href="./css/stylesheet.css" media="all" rel="stylesheet">
+    <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     <link href="./images/logo.webp" rel="apple-touch-icon"/>
-    <script src="js.webflow.js" type="text/javascript"></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
     <script defer=""
             type="text/javascript">WebFont.load({google: {families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]}});</script>
+    <script defer="" src="js/webflow2.min.js" type="text/javascript"></script>
+    <link href="./css/stylesheet.css" media="all" rel="stylesheet">
+    <script defer="" type="text/javascript">
+        !function (o, c) {
+            let n = c.documentElement, t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);</script>
     <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="./images/apple-touch-icon.png" rel="apple-touch-icon">
 </head>
 <body>
 <div class="navigation w-nav" data-animation="default" data-collapse="medium" data-duration="400" role="banner">
     <div class="navigation-items">
+        <a
+            aria-current="page"
+            aria-label="home"
+            class="logo-link w-nav-brand w--current"
+            href="/">
+            <img
+                    alt="The SerumHydra Logo"
+                    loading="lazy"
+                    src="./images/logo.jpeg"
+                    width="100">
+        </a>
+        <a
+                aria-current="page"
+                class="logo-link w-nav-bran w--current"
+                href="/projects.html">
+        </a>
+        <br>
+            Heya! im SerumHydra or just Hydra, Im a 15 year-old streamer from the south east of england.
+        </a>
+        <br>
+            I've been streaming for the majority of two years now and I may not be the biggest but im hoping to grow a relatively big community!
+        </a>
+    </div>
+    <a class="twitch-link" href="https://www.twitch.tv/serumhydra">Direct to my twitch channel<br></a>
 </body>
+<div>
+    <p>Embed of my twitch channel</p>
+    <div class="section">
+        <div class="w-layout-grid works-grid" id="works-grid"></div>
+        <div id="twitch-embed"></div>
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+        <script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "serumhydra"
+  });
+</script>
+</div>
